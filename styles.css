@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hexcode h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  animation: changecolor 5s infinite alternate;
+}
+
+@keyframes changecolor {
+  0% {
+    color: indigo;
+  }
+  20% {
+    color: blue;
+  }
+  40% {
+    color: green;
+  }
+  60% {
+    color: yellow;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.buttonbox {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonbox h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.buttonbox button {
+  font-size: 30px;
+  background: transparent;
+  border: 1px solid black;
+  padding: 10px 20px;
+  transition: transform;
+  transition-duration: 1s;
+}
+
+.buttonbox button:hover {
+    transform: scale(1.3);
+}
